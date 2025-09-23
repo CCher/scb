@@ -1,0 +1,16 @@
+@use "sass:map";
+@use "sass:meta";
+
+$breakpoints: (
+  mobile: 240,
+  tablet: 320,
+  desktop: 560);
+
+
+@mixin respond-to($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    @media screen and (min-width: map.get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@use './scss/base/variables' as *;
+@use './scss/base/mixins' as *;
+@use './scss/base/reset' as *;
+@use './scss/base/fonts' as *;
+
+// Темы
+@use './scss/base/themes';
+
+// Блоки
+@use './scss/blocks/button/button'as button;
+@use './scss/blocks/container/container'as container;
+@use './scss/blocks/title/title'as title;
+@use './scss/blocks/calendar/calendar'as calendar;
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.warning {
+  display: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: var(--font-size);
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accent-color);
+  line-height: 150%;
+  text-transform: uppercase;
+  text-align: center;
+  margin: .25rem;
+
+  @media screen and (max-width: 279px) {
+    display: block;
+  }
+}

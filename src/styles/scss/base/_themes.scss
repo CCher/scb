@@ -1,0 +1,23 @@
+:root {
+  --bg-color: #efecec;
+  --title-color: var(--black-color);
+  --button-color: var(--accent-color);
+  --button-text: var(--black-color);
+  --selected-color: var(--black-color);
+  --selected-bg: var(--text-color);
+  --selected-border: var(--text-color);
+  --range-bg: var(--text-color);
+  --range-color: var(--black-color);
+}
+
+.theme-dark {
+  --bg-color: #2a2929;
+  --title-color: var(--text-20-color);
+  --button-color: var(--accent-dark-color);
+  --button-text: var(--text-color);
+  --selected-color: var(--text-color);
+  --selected-bg: var(--accent-color);
+  --selected-border: var(--accent-dark-color);
+  --range-bg: var(--accent-color);
+  --range-color: var(--text-color);
+}
