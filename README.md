@@ -2,7 +2,7 @@
 
 Календарь с возможностью выбора дат и диапазонов, поддержкой light/dark темы.
 
-![Preview](docs/preview.png)
+![Preview](docs/preview.jpg)
 
 ## Технологии
 * HTML5
