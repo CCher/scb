@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch: {}
 
 jobs:
   deploy:
@@ -14,14 +15,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
       
       - run: npm install
       
       - run: npm run build
       
-      - name: Deploy
+      - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: scb
-          branch: master
+          branch: gh-pages

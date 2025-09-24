@@ -8,8 +8,7 @@
     "dev": "vite",
     "build": "npx vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d scb -b master"
+    "deploy": "gh-pages -d scb"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^8.44.0",
